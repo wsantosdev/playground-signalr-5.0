@@ -1,0 +1,37 @@
+@page
+
+<div>
+    <div>
+        <select id="selectSymbols">
+            <option value="">Selecione um ativo</option>
+            <option value="PETR4">PETR4</option>
+            <option value="VALE3">VALE3</option>
+            <option value="ITUB4">ITUB4</option>
+            <option value="BBDC4">BBDC4</option>
+            <option value="BBAS3">BBAS3</option>
+        </select>
+    </div>
+
+    <div style="margin-top:20px;">
+        <div>
+            Cotação para: <span id="spanSymbol"></span>
+        </div>
+        <div>
+            Ultimo Preço: <span id="spanPrice"></span>
+        </div>
+        <div>
+            Última atualização: <span id="spanTime"></span>
+        </div>
+    </div>
+
+    <div style="margin-top:20px;">
+        <div>
+            <span id="spanError"></span>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/libs/signalr.min.js"></script>
+<script src="~/js/libs/msgpack5.min.js"></script>
+<script src="~/js/libs/signalr-protocol-msgpack.min.js"></script>
+<script src="~/js/quotes.js"></script>
